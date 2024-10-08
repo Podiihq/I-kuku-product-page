@@ -36,6 +36,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+
     <title>i-Kuku - Revolutionize Your Poultry Business</title>
 </head>
 <body style="font-family: 'Inter', sans-serif; scroll-behavior: smooth;">
@@ -188,5 +190,17 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+    const lenis = new Lenis();
+    
+    function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    </script>
 </body>
 </html>
